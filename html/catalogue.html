@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style2.css"/>
+    </head>
+
+    <body onload="affichecat()">
+        <header>
+            <div class="logo">
+                <img src="recipe (1).png" alt="recipe book" style="width:48px;height:48px;">
+                <a id="tt"> 1001Recettes </a> 
+              </div>
+              <nav>
+                <a href="1001Recettes.html">Acceuil</a>
+               
+                <a href="#">Catégories</a>
+                <a href="#" class="home">catalogue</a>
+    
+              </nav>
+              <a href="#" class="sign">S'inscrire</a>
+          </header>
+          
+          <main>
+            <div class="container-input">
+              <input type="text" id="search-input" placeholder="Search" name="text" class="input">
+              <button onclick="filterRecipes()">Rechercher</button>
+              <svg fill="#000000" width="20px" height="20px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+                <path d="M790.588 1468.235c-373.722 0-677.647-303.924-677.647-677.647 0-373.722 303.925-677.647 677.647-677.647 373.723 0 677.647 303.925 677.647 677.647 0 373.723-303.924 677.647-677.647 677.647Zm596.781-160.715c120.396-138.692 193.807-319.285 193.807-516.932C1581.176 354.748 1226.428 0 790.588 0S0 354.748 0 790.588s354.748 790.588 790.588 790.588c197.647 0 378.24-73.411 516.932-193.807l516.028 516.142 79.963-79.963-516.142-516.028Z" fill-rule="evenodd"></path>
+            </svg>
+            </div>
+
+            <!-- cette selection n'as pas voulu marcher donc je l'ai mise en comm il y a sa fonction dans catalogue.js  <div id="div9">
+              <label for="specialite">Catégories <span class="required">*</span></label>
+              <br><br> 
+              <select id="category-select" onchange="filterRecipesCATEGORIE()">
+              <option value="">Toutes les catégories</option>
+              <option value="Petit déjeuner">Petit déjeuner</option>
+              <option value="Déjeuner">Déjeuner</option>
+              <option value="Dîner">Dîner</option>
+              <option value="Plat principal">Plat principal</option>
+              <option value="Plat">Plat</option>
+              <option value="Entrée">Entrée</option> 
+            -->
+            
+
+             <!-- </select>
+
+              <select id="category-select" onchange="filterRecipesCATEGORIE()">
+                <option value="">Toutes les catégories</option>
+                <option value="Entrée">Entrées</option>
+                <option value="Plat">Plats</option>
+                <option value="Dessert">Desserts</option>
+            </select> -->
+
+            <div id="affiche" class="blog"></div>
+            
+
+          </div>
+
+
+
+          </main>
+
+          <footer id="footer" class="section footer-classic context-dark bg-image" style="background: #684d23;">
+            <div class="container">
+              <div class="row row-30">
+                <div class="col-md-4 col-xl-5">
+                    <p><h3>a propos de nous:</h3> <br> 
+                      nous sommes un groupe de jeunes devlopeurs passionner par la cuisine nous avons <br>
+                      alors créer ce site pour la partager avec le reste du monde on esperant que vous<br>
+                      prendrez plaisir a préparer tout ces delicieux petit plat et aprecirez notre contenu</p>
+  
+                    <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>1001Recettes</span><span> - </span><span>All Rights Reserved.</span></p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <h5>Contacts</h5>
+                  <dl class="contact-list">
+                    <dt>Address:</dt>
+                    <dd>123 bebz, alger, algerie</dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>email:</dt>
+                    <dd><a href="mailto:#">1001Recettes@email.com</a></dd>
+                  </dl>
+                  <dl class="contact-list">
+                    <dt>phones:</dt>
+                    <dd><a href="tel:#">1.555.652.258</a> <span>or</span> <a href="tel:#">1.55.652.268</a>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </footer>
+        
+          
+</body>
+<script src="../js/recettesDB.js"></script>
+<script src="../js/catalogue.js"></script>
+</html>
